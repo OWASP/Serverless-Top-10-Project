@@ -32,9 +32,10 @@ The first report is first glance to the serverless security world and will serve
 
 ## Open Call
 * We are actively looking for organizations and individuals that will provide vulnerability prevalence data.
+
+## Get Involed!
 * Translation efforts
 * Assisting in the development of related tools (e.g. DVSA)
-Individuals and organizations that will contribute to the project will listed on the acknowledgments page.
 
 [Slack Channel](https://join.slack.com/t/owasp/shared_invite/enQtNDI5MzgxMDQ2MTAwLTEyNzIzYWQ2NDZiMGIwNmJhYzYxZDJiNTM0ZmZiZmJlY2EwZmMwYjAyNmJjNzQxNzMyMWY4OTk3ZTQ0MzFhMDY)
 
