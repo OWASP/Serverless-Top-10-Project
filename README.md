@@ -1,4 +1,7 @@
-# OWASP Serverless Top 10
+![OWASP Logo](https://www.owasp.org/images/3/32/OWASP_Project_Header.jpg)
+
+
+# [OWASP Serverless Top 10](https://www.owasp.org/index.php/OWASP_Serverless_Top_10_Project)
 ## Overview
 When adopting serverless technology, we eliminate the need to develop a server to manage our application. By doing so, we also pass some of the security threats to the infrastructure provider. In addition to the many advantages of serverless application development, such as cost and scalability, some security aspects are also handed to our service provider, which can usually be trusted. 
 
@@ -28,4 +31,10 @@ The first report is first glance to the serverless security world and will serve
 * Acknowledgments
 
 ## Open Call
+* We are actively looking for organizations and individuals that will provide vulnerability prevalence data.
+* Translation efforts
+* Assisting in the development of related tools (e.g. DVSA)
+Individuals and organizations that will contribute to the project will listed on the acknowledgments page.
 
+[Slack Channel](https://join.slack.com/t/owasp/shared_invite/enQtNDI5MzgxMDQ2MTAwLTEyNzIzYWQ2NDZiMGIwNmJhYzYxZDJiNTM0ZmZiZmJlY2EwZmMwYjAyNmJjNzQxNzMyMWY4OTk3ZTQ0MzFhMDY)
+[Official page](https://www.owasp.org/index.php/OWASP_Serverless_Top_10_Project)
