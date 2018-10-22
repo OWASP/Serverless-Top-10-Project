@@ -37,4 +37,5 @@ The first report is first glance to the serverless security world and will serve
 Individuals and organizations that will contribute to the project will listed on the acknowledgments page.
 
 [Slack Channel](https://join.slack.com/t/owasp/shared_invite/enQtNDI5MzgxMDQ2MTAwLTEyNzIzYWQ2NDZiMGIwNmJhYzYxZDJiNTM0ZmZiZmJlY2EwZmMwYjAyNmJjNzQxNzMyMWY4OTk3ZTQ0MzFhMDY)
+
 [Official page](https://www.owasp.org/index.php/OWASP_Serverless_Top_10_Project)
