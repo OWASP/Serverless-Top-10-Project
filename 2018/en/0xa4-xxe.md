@@ -25,7 +25,7 @@ A successful XXE attack in a serverless application could lead mostly into funct
 
 The attack vulnerability and payloads are the same as in traditional applications. A possible variation of the attack can be when a vulnerable function is triggered from a cloud storage upload event and parses files which contains XML content.
 
-![XXE 1](images\0xa4-xxe-1.md)
+![XXE 1](images/0xa4-xxe-1.md)
 
 Sending a simple XXE payload caused the function to access its source code file:
 
@@ -41,4 +41,4 @@ Sending a simple XXE payload caused the function to access its source code file:
 
 As a result, the code was printed to the log. However, to leak the source out of the account, would require an Out-of-Bound or code execution XXE technique, that in many cases is disabled (like in this case) or irrelevant:
 
-![XXE 2](images\0xa4-xxe-2.md)
+![XXE 2](images/0xa4-xxe-2.md)
