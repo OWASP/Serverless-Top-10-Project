@@ -30,12 +30,12 @@ There is no change of impact in case of sensitive data exposure. Sensitive data 
 
 A system contains a management application that manages different sub-accounts. To communicate with the management application the function contains hardcoded keys for the management AWS account.
 
-![Sensitive Data Exposure 1](image/0xa3-sensitive-data-exposure-1.png)
+![Sensitive Data Exposure 1](images/0xa3-sensitive-data-exposure-1.png)
 
 If the attackers gain access to the code via the code repository, access to the runtime environment or by any other means, They can use it to try to access resources that belong to the management account (e.g. using AWS-CLI). For example, listing the above bucket (i.e. protego-a6-archive-bucket).
 
-![Sensitive Data Exposure 2](image/0xa3-sensitive-data-exposure-2.png)
+![Sensitive Data Exposure 2](images/0xa3-sensitive-data-exposure-2.png)
 
 But could also try to access other resources, depending on the IAM Role associated with the stolen credentials.
 
-![Sensitive Data Exposure 3](image/0xa3-sensitive-data-exposure-3.png)
+![Sensitive Data Exposure 3](images/0xa3-sensitive-data-exposure-3.png)
