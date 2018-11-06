@@ -1,24 +1,17 @@
 # A6:2017 Security Misconfiguration
 ## Attack Vectors
-Unused pages are replaced with unlinked triggers, unprotected files and directories are changed to public
-resources, like public buckets. Attackers will try to identify misconfigured functions with long timeout or low
-concurrency limit in order to cause a Denial of Service (DoS). Additionally, functions which contain
-unprotected secrets like keys and token in the code or the environment could eventually result in sensitive
+Unused pages are replaced with unlinked triggers, unprotected files and directories are changed to public resources, like public buckets. Attackers will try to identify misconfigured functions with long timeout or low concurrency limit in order to cause a Denial of Service (DoS). Additionally, functions which contain unprotected secrets like keys and token in the code or the environment could eventually result in sensitive
 information leakage.
 
 ## Security Weakness
-Serverless reduces the need to to patch the environment, since we do not control the infrastructure.
-However, in many cases the biggest weakness is human error. Secrets could be ​[accidently uploaded to the github repo](https://www.forbes.com/sites/runasandvik/2014/01/14/attackers-scrape-github-for-cloud-service-credentials-hijack-account-to-mine-virtual-currency/)​, put it on a public bucket or even used hardcoded in the function.
+Serverless reduces the need to to patch the environment, since we do not control the infrastructure. However, in many cases the biggest weakness is human error. Secrets could be ​[accidently uploaded to the github repo](https://www.forbes.com/sites/runasandvik/2014/01/14/attackers-scrape-github-for-cloud-service-credentials-hijack-account-to-mine-virtual-currency/)​, put it on a public bucket or even used hardcoded in the function.
 
-Additionally, functions with long timeout configuration give an attacker the opportunity to make their exploit
-last longer or just cause an increased charge for the function execution.
+Additionally, functions with long timeout configuration give an attacker the opportunity to make their exploit last longer or just cause an increased charge for the function execution.
 
-Moreover, functions with low concurrency limit could lead into a DoS attack, while functions with high
-concurrency limit could result in a Denial of Wallet (see ​[Other Risks](internal)​ section)
+Moreover, functions with low concurrency limit could lead into a DoS attack, while functions with high concurrency limit could result in a Denial of Wallet (see ​[Other Risks](internal)​ section)
 
 ## Impact
-Misconfiguration could lead to sensitive information leakage, money loss, DoS or in severe cases,
-unauthorized access to cloud resources.
+Misconfiguration could lead to sensitive information leakage, money loss, DoS or in severe cases, unauthorized access to cloud resources.
 
 ## How to Prevent
 - Scan cloud accounts to identify public resources. Use built-in services available from the provider such as AWS Trusted Advisor which provides ​[security checks​](https://aws.amazon.com/premiumsupport/trustedadvisor/best-practices/#security) (some for free)

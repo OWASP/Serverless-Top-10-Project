@@ -16,8 +16,7 @@ As usual, the business impact depends on the application and the data it handles
 - It is also a good practice to monitor deserialization usage and exceptions to identify possible attacks.
 
 ## Example Attack Scenario
-An application is using a Telegram chat Bot agent to provide information about movies. To do so, a function is triggered when text messages are received (via API GW), taking the input and returning data related to the requested movie using the Open Movie Database (OMDb) API. However, the ​ JsonMapper class i ​ s using JSON
-deserialization, by calling jackson.databind.ObjectMapper.readValue() which is ​[known to be vulnerable​](https://nvd.nist.gov/vuln/detail/CVE-2017-17485).
+An application is using a Telegram chat Bot agent to provide information about movies. To do so, a function is triggered when text messages are received (via API GW), taking the input and returning data related to the requested movie using the Open Movie Database (OMDb) API. However, the ​ JsonMapper class i ​ s using JSON deserialization, by calling jackson.databind.ObjectMapper.readValue() which is ​[known to be vulnerable​](https://nvd.nist.gov/vuln/detail/CVE-2017-17485).
 <image>
 This allows any unauthenticated telegram user to send malicious content via text and without performing input validation. To exploit it, the attacker needs to send a Java serialized object in the telegram text which will be translated into a JSON as part of the Bot API request.
 <image>
@@ -44,5 +43,6 @@ By using the following payload, attackers can steal AWS environment data such as
     }
 When the code runs, it will launch a new process which will send the environment credentials to the attacker. This could eventually lead to invoking the function manually,providing it with any type of input which can end in a complete takeover of cloud resources, depending on the permissions of the function.
 <image>
+
 ## Serverless Risk Meter
 Deserialization attacks are considered hard to find and exploit. In serverless, they are also limited to the time and space of the function, which has a reduced surface. However, importing vulnerable libraries that handle de/serialization of data is very common, and the increased use of JSON types together with dynamic languages like Python and JavaScript could result in code injection, which could eventually lead into resource takeover by the attacker.
