@@ -28,7 +28,7 @@ any suggested additions not currently on this list
 
 ## Attributions
 Thanks to ​[Protego Labs](https://​protego.io) for sponsoring this report and for everyone else who contributed. Reviewers of this
-report are mentioned on the ​[Acknowledgements page​](page35).
+report are mentioned on the ​[Acknowledgements page​](internal).
 
 Organizations and individuals that will provide vulnerability prevalence data or other assistance will be listed on the acknowledgments page of the official project.
 
