@@ -13,8 +13,8 @@ The OWASP Top 10 is the de-facto guide for security practitioners to understand 
 The first report is first glance to the serverless security world and will serve as a baseline to the official OWASP Top 10 in Serverless project. The report  examines the differences in attack vectors, security weaknesses, and business impact of successful attacks on applications in the serverless world, and, most importantly, how to prevent them. As we will see, attack prevention is different from the traditional application world. Additional risks, which are not part of the original OWASP Top 10, but might be relevant for the final version, are listed on the Other Risks to Consider page. 
 
 ### ToC
-* Release notes
-* Intro: Welcome to Serverless Security
+* [Release notes](2018/en/0x06-release-notes.md)
+* [Intro: Welcome to Serverless Security](2018/en/0x05-introduction.md)
 * A1:2017 [Injection](2018/en/0xa1-injection.md)
 * A2:2017 [Broken Authentication](2018/en/0xa2-broken-authentication.md)
 * A3:2017 [Sensitive Data Exposure](2018/en/0xa3-sensitive-data-disclosure.md)
