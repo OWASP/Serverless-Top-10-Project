@@ -15,7 +15,7 @@ The first report is first glance to the serverless security world and will serve
 ### ToC
 * Release notes
 * Intro: Welcome to Serverless Security
-* A1:2017 Injection
+* A1:2017 [Injection](2018/en/0xa1-injection.md)
 * A2:2017 [Broken Authentication](2018/en/0xa2-broken-authentication.md)
 * A3:2017 [Sensitive Data Exposure](2018/en/0xa3-sensitive-data-disclosure.md)
 * A4:2017 [XML External Entities (XXE)](2018/en/0xa4-xxe.md)
@@ -25,10 +25,10 @@ The first report is first glance to the serverless security world and will serve
 * A8:2017 [Insecure Deserialization](2018/en/0xa8-insecure-deserialization.md)
 * A9:2017 [Using Components with Known Vulnerabilities](2018/en/0xa9-known-vulns.md)
 * A10:2017 [Insufficient Logging and Monitoring](2018/en/0xaa-logging-detection-response.md)
-* Other Risks to Consider
-* Summary
-* Future Work
-* Acknowledgments
+* [Other Risks to Consider](2018/en/0xab-other-risks.md)
+* [Summary](2018/en/0xac-summary.md)
+* [Future Work](2018/en/0xad-future-work.md)
+* [Acknowledgments](2018/en/0xae-acknowledgements.md)
 
 ## Open Call
 * We are actively looking for organizations and individuals that will provide vulnerability prevalence data.
