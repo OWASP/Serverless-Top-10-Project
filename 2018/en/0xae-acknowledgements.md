@@ -1,7 +1,8 @@
 ## Project Sponsors
 We'd like to thank ​ Protego Labs​ for their helping in the creation of the report and for supporting the OWASP
 Serverless Top 10 Project.
-<image>
+
+![protego-logo](images/0xae-acknowledgements-1.png)
 
 Individual Contributors
 We’d like to thank the individual contributors who spent many hours collectively contributing to the

