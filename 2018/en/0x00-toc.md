@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 
 [Release Notes](0x06-release-notes.md)
 
@@ -32,4 +32,4 @@
 
 [Future Work](0xad-future-work.md)
 
-[Acknowledgments](0xae-acknowledgements.md)
+[Acknowledgements](0xae-acknowledgements.md)

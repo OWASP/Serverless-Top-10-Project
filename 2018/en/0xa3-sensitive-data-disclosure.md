@@ -4,7 +4,7 @@
 
 Sensitive data exposure is as a concern in serverless architecture as in any other architecture. Most of the methods used in traditional architectures, such as stealing keys, performing man-in-the-middle (MitM) attacks and stealing readable data at rest or in transit, still apply to serverless applications. However, the data sources might be different. Instead of stealing data from a server, the attacker can target cloud storage (e.g. S3, Blob) and database tables (e.g. DynamoDB, CosmosDB).
 
-Additionally, leaked keys can lead into unauthenticated and unauthorized actions in the account. There are tools that look for leaked keys in GitHub like KeyNuker, Truffle Hog or even git-secrets by AWS Labs. Moreover, the environment on which the functions run is read-only except to the /tmp directory. Attackers can target this folder to look for leftovers from previous executions (refer to: [Insecure Shared Space]()).
+Additionally, leaked keys can lead into unauthenticated and unauthorized actions in the account. There are tools that look for leaked keys in GitHub like KeyNuker, Truffle Hog or even git-secrets by AWS Labs. Moreover, the environment on which the functions run is read-only except to the `/tmp` directory. Attackers can target this folder to look for leftovers from previous executions (refer to: [Insecure Shared Space](0xab-other-risks.md#x-insecure-shared-space)).
 
 Passwords, application logs, hosts, and other files that the attacker used to target belong to the infrastructure now and are less of a concern. On the other hand, you can find the source code of the function as well as the environment variables.
 
@@ -12,7 +12,7 @@ Passwords, application logs, hosts, and other files that the attacker used to ta
 
 Storing sensitive data in plaintext or even using weak cryptography on any storage is extremely common and will likely continue in serverless applications.
 
-In addition, writing data to the /tmp directory without deleting it after use, based on the assumption that the container will die after the execution, could lead into sensitive data leakage in case the attacker gains access to the environment.
+In addition, writing data to the `/tmp` directory without deleting it after use, based on the assumption that the container will die after the execution, could lead into sensitive data leakage in case the attacker gains access to the environment.
 
 ## Impact
 
