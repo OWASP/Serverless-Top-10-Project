@@ -1,4 +1,5 @@
-## Summary
+# Summary
+
 After investigating each risk under serverless architecture, we can definitely say the risks were not eliminated they just changed, for better and for worse.
 
 Interesting application data might lie elsewhere, but it still needs proper protection. While the environment data might not be as interesting, spreading data into cloud storage requires careful attention of who can access it and how. Leaving even one function open could lead to a massive data leak.

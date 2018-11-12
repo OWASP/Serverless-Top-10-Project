@@ -10,7 +10,7 @@ Serverless reduces the need to to patch the environment, since we do not control
 
 Additionally, functions with long timeout configuration give an attacker the opportunity to make their exploit last longer or just cause an increased charge for the function execution.
 
-Moreover, functions with low concurrency limit could lead into a DoS attack, while functions with high concurrency limit could result in a Denial of Wallet (see [Other Risks]() section)
+Moreover, functions with low concurrency limit could lead into a DoS attack, while functions with high concurrency limit could result in a Denial of Wallet (see [Other Risks](0xab-other-risks.md) section)
 
 ## Impact
 
