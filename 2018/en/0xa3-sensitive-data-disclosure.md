@@ -24,7 +24,7 @@ There is no change of impact in case of sensitive data exposure. Sensitive data 
 - Minimize storage of sensitive data to only what is absolutely necessary
 - Protect data at rest and in transit according to best practices
 - Use HTTPS only endpoints for APIs
-- Use the infrastructure provider’s services for key management and encryption of stored data, secrets and environment variables (e.g. [AWS Environment variable encryption](https://docs.aws.amazon.com/lambda/latest/dg/env_variables.html#env_encrypt), [Handling Azure secrets](https://david-obrien.net/2016/09/azure-functions-secrets/)) to the functions in runtime and data in transit (e.g. AWS/Cloud KMS, Azure Key Vault).
+- Use the infrastructure provider’s services for key management and encryption of stored data, secrets and environment variables (e.g. [AWS Environment variable encryption](https://docs.aws.amazon.com/lambda/latest/dg/env_variables.html#env_encrypt), [Handling Azure secrets](https://david-obrien.net/2016/09/azure-functions-secrets/)) to the functions in runtime and data in transit (e.g. [AWS Key Management Service](https://aws.amazon.com/kms/), [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/), [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/)).
 
 ## Example Attack Scenario
 
