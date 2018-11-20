@@ -42,6 +42,7 @@ The first report is first glance to the serverless security world and will serve
 * Translation efforts
 * Assisting in the development of related tools (e.g. DVSA)
 
-[Slack Channel](https://join.slack.com/t/owasp/shared_invite/enQtNDI5MzgxMDQ2MTAwLTEyNzIzYWQ2NDZiMGIwNmJhYzYxZDJiNTM0ZmZiZmJlY2EwZmMwYjAyNmJjNzQxNzMyMWY4OTk3ZTQ0MzFhMDY)
+[Slack](https://owasp.slack.com): [#project-sls-top10](https://owasp.slack.com/messages/project-sls-top10) channel
+([invitation link](https://join.slack.com/t/owasp/shared_invite/enQtNDI5MzgxMDQ2MTAwLTEyNzIzYWQ2NDZiMGIwNmJhYzYxZDJiNTM0ZmZiZmJlY2EwZmMwYjAyNmJjNzQxNzMyMWY4OTk3ZTQ0MzFhMDY))
 
 [Official page](https://www.owasp.org/index.php/OWASP_Serverless_Top_10_Project)
