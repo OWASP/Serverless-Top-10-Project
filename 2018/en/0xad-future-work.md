@@ -1,6 +1,6 @@
 # Future Work
 
-The goal of this report is to provide a first glance of the serverless security sphere. All the vulnerable code examples can be found in a project github ​[repository​](https://github.com/OWASP/Serverless-Top-10-Project) .
+The goal of this report is to provide a first glance of the serverless security sphere. All the vulnerable code examples can be found in a project GitHub ​[repository​](https://github.com/OWASP/Serverless-Top-10-Project) .
 
 The next stages are:
 
