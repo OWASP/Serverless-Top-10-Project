@@ -4,7 +4,7 @@
 
 ## Overview
 
-When adopting serverless technology, we eliminate the need to develop a server to manage our application. By doing so, we also pass some of the security threats to the infrastructure provider. In addition to the many advantages of serverless application development, such as cost and scalability, some security aspects are also handed to our service provider, which can usually be trusted.
+When adopting a [serverless architecture](https://martinfowler.com/articles/serverless.html), we eliminate the need to develop a server to manage our application. By doing so, we also pass some of the security threats to the infrastructure provider. In addition to the many advantages of serverless application development, such as cost and scalability, some security aspects are also handed to our service provider, which can usually be trusted.
 
 However, even if these applications are running without a provisioning server, they still execute code. If this code is written in an insecure manner, the application can be vulnerable to traditional application-level attacks, like Cross-Site Scripting (XSS), Command/SQL Injection, Denial of Service (DoS), broken authentication and authorization and many more.
 
