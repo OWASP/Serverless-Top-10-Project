@@ -6,9 +6,9 @@ In order to enhance our understanding of the most prevalent security risks in se
 
 TBD
 
-## Survey
+## Surveys and Interviews
 
-We will collect the data using a [survey](survey.md).
+We will collect the data using a [questionnaire](questionnaire.md).
 
 ## Contributors
 
