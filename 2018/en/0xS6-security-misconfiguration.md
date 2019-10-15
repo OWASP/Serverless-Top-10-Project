@@ -1,4 +1,4 @@
-# A6:2017 Security Misconfiguration
+# S6:2017 Security Misconfiguration
 
 ## Attack Vectors
 
@@ -32,6 +32,6 @@ If the cloud storage is misconfigured and has public upload (write object) acces
 
 For example, by running the aws-cli with his/her own profile credentials, the attacker is able to upload a random (invalidated) file into the organization’s cloud storage.
 
-![Security Misconfiguration 1](images/0xa6-security-misconfiguration-1.png)
+![Security Misconfiguration 1](images/0xS6-security-misconfiguration-1.png)
 
-![Security Misconfiguration 2](images/0xa6-security-misconfiguration-2.png)
+![Security Misconfiguration 2](images/0xS6-security-misconfiguration-2.png)

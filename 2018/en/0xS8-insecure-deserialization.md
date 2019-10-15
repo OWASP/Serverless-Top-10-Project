@@ -1,4 +1,4 @@
-# A8:2017 Insecure Deserialization
+# S8:2017 Insecure Deserialization
 
 ## Attack Vectors
 
@@ -22,11 +22,11 @@ As usual, the business impact depends on the application and the data it handles
 
 An application is using a Telegram chat Bot agent to provide information about movies. To do so, a function is triggered when text messages are received (via API GW), taking the input and returning data related to the requested movie using the Open Movie Database (OMDb) API. However, the JsonMapper class is using JSON deserialization, by calling jackson.databind.ObjectMapper.readValue() which is known to be vulnerable.
 
-![Insecure Deserialization 1](images/0xa8-insecure-deserialization-1.png)
+![Insecure Deserialization 1](images/0xS8-insecure-deserialization-1.png)
 
 This allows any unauthenticated telegram user to send malicious content via text and without performing input validation. To exploit it, the attacker needs to send a Java serialized object in the telegram text which will be translated into a JSON as part of the Bot API request.
 
-![Insecure Deserialization 2](images/0xa8-insecure-deserialization-2.png)
+![Insecure Deserialization 2](images/0xS8-insecure-deserialization-2.png)
 
 By using the following payload, attackers can steal AWS environment data such as `AWS_SESSION_TOKEN`, `AWS_SECRET_ACCESS_KEY`, `AWS_SECURITY_TOKEN`, which could be used to create an AWS [AssumeRole](https://docs.aws.amazon.com/cli/latest/reference/sts/assume-role.html) and access AWS resources.
 
@@ -54,4 +54,4 @@ By using the following payload, attackers can steal AWS environment data such as
 
 When the code runs, it will launch a new process which will send the environment credentials to the attacker. This could eventually lead to invoking the function manually, providing it with any type of input which can end in a complete takeover of cloud resources, depending on the permissions of the function.
 
-![Insecure Deserialization 3](images/0xa8-insecure-deserialization-3.png)
+![Insecure Deserialization 3](images/0xS8-insecure-deserialization-3.png)

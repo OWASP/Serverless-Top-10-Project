@@ -1,4 +1,4 @@
-# A7:2017 Cross-Site Scripting (XSS)
+# S7:2017 Cross-Site Scripting (XSS)
 
 ## Attack Vectors
 
@@ -20,8 +20,8 @@ This is one of the only risks for which original recommendations stand. Encoding
 
 Used by support agents, an application alerts for any emails received via SNS. This is performed via a function that is triggered by an SNS event and pushes a notification to the operator dashboard.
 
-![XSS 1](images/0xa7-xss-1.png)
+![XSS 1](images/0xS7-xss-1.png)
 
 The client that listens to the topic via MQTT-WebSocket, prints the email subject without performing any encoding/validation. This results in an XSS attack which originated by an email subject.
 
-![XSS 2](images/0xa7-xss-2.png)
+![XSS 2](images/0xS7-xss-2.png)

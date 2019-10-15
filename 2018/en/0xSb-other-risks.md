@@ -48,7 +48,7 @@ Furthermore, in some cases functions should only be invoked in certain cases and
 
 Such behavior could be achieved by:
 
-- Targeting a misconfigured public resource that triggers an internal functionality to bypass the execution flow (refer to ​[A2: Broken Authentication​ attack scenario example](0xa2-broken-authentication.md#example-attack-scenario))
+- Targeting a misconfigured public resource that triggers an internal functionality to bypass the execution flow (refer to ​[S2: Broken Authentication​ attack scenario example](0xS2-broken-authentication.md#example-attack-scenario))
 - Targeting resources that do not enforce proper access control and lead into execution flow manipulation
 - Accessing unauthorized data by manipulating a parameter that is relied upon by the function, without a way to verify it
 - Modifying client-side code to bypass limits

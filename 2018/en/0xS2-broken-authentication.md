@@ -1,4 +1,4 @@
-# A2:2017 Broken Authentication
+# S2:2017 Broken Authentication
 
 ## Attack Vectors
 
@@ -32,4 +32,4 @@ Having access to functions without authentication can lead to sensitive data lea
 
 To enable high velocity development, each time a pull request is created the designated manager receives an email message with the relevant information. The manager can than reply to the mail to approve/decline the request. This is done via an SES services that triggers a function with the relevant permissions to approve or close a request. However, if attackers gain knowledge of the email address as well as the required email format, they can sabotage with the development or even inset backdoors into the code by sending a malicious email directly to the designated email address.
 
-![Broken Authentication](images/0xa2-broken-authentication.png)
+![Broken Authentication](images/0xS2-broken-authentication.png)
