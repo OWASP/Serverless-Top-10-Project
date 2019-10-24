@@ -1,4 +1,4 @@
-# A10:2017 Insufficient Logging and Monitoring
+# S10:2017 Insufficient Logging and Monitoring
 
 ## Attack Vectors
 
@@ -21,14 +21,14 @@ The impact of not having a proper auditing mechanism in place cannot be determin
 
 To tackle the missing perimeter, a serverless application has developed a lambda firewall which is triggered on every event and validates the incoming input against a file which contains a blacklist of inputs.
 
-![Insufficient Logging & Monitoring 1](images/0xaa-logging-detection-response-1.png)
+![Insufficient Logging & Monitoring 1](images/0xSa-logging-detection-response-1.png)
 
 If the input is considered safe, the firewall calls the designated function that will process the request. However, if the input is considered malicious, the application logs the incoming input. A different function is reading the CloudWatch events and notifies in case a malicious input audit is found in the logs.
 
 As a result of an input containing a malicious payload, the audit function printed a designated line into CloudWatch.
 
-![Insufficient Logging & Monitoring 2](images/0xaa-logging-detection-response-2.png)
+![Insufficient Logging & Monitoring 2](images/0xSa-logging-detection-response-2.png)
 
 However, due to CloudWatch [log limits](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html), if an attacker will send a big input (over 1MB), the malicious input will not be detected and the function will not write any additional logs to CloudWatch, including the automatic END and REPORT logs. Instead, the logs will only show the START event entry.
 
-![Insufficient Logging & Monitoring 3](images/0xaa-logging-detection-response-3.png)
+![Insufficient Logging & Monitoring 3](images/0xSa-logging-detection-response-3.png)

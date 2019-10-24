@@ -1,4 +1,4 @@
-# A9:2017 Using Components with Known Vulnerabilities
+# S9:2017 Using Components with Known Vulnerabilities
 
 ## Attack Vectors
 
@@ -25,6 +25,6 @@ Like any facet of cybersecurity, securing serverless applications requires a var
 
 The following function uses the url-parse library. Vulnerable versions of this URL string parsing solution return an incorrect hostname, an issue that leads to multiple flaws such like SSRF (Server Side Request Forgery), Open Redirect, or Bypass Authentication Protocol, leaving users open to exploit.
 
-![Known Vulns](images/0xa9-known-vulns.png)
+![Known Vulns](images/0xS9-known-vulns.png)
 
 By passing a malicious data to the apiUrl parameter (e.g. `http://google.com:80%5c%5cyahoo.com//`), the function will return a false host and will result in redirecting the user to a malicious website.

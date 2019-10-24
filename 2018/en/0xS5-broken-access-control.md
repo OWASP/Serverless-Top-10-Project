@@ -1,4 +1,4 @@
-# A5:2017 Broken Access Control
+# S5:2017 Broken Access Control
 
 ## Attack Vectors
 
@@ -25,7 +25,7 @@ The impact relies on the compromised resource. Simple cases could lead into data
 
 A function which is designed to write into an cloud storage, has assigned the following IAM policy, which practically authorizes the function to perform _any_ action on _any_ bucket in the account:
 
-![Broken Access Control 1](images/0xa5-broken-access-control-1.png)
+![Broken Access Control 1](images/0xS5-broken-access-control-1.png)
 
 If the function is found vulnerable, an attacker could exploit it to perform unauthorized access, including:
 
@@ -36,4 +36,4 @@ If the function is found vulnerable, an attacker could exploit it to perform una
 
 To prevent the attack in this scenario, the following IAM role should be assigned to the function. This grants the function the minimal required permissions, which is uploading files (_PutObject_) on a specific storage (_myOrderBucket_):
 
-![Broken Access Control 2](images/0xa5-broken-access-control-2.png)
+![Broken Access Control 2](images/0xS5-broken-access-control-2.png)
