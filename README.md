@@ -1,4 +1,4 @@
-![OWASP Logo](https://www.owasp.org/images/3/32/OWASP_Project_Header.jpg)
+![OWASP Logo](https://owasp.org/assets/images/logo.png)
 
 # [OWASP Serverless Top 10](https://www.owasp.org/index.php/OWASP_Serverless_Top_10_Project)
 
