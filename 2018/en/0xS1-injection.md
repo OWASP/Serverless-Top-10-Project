@@ -51,7 +51,26 @@ The attacker can now investigate the code and use it to create a more cloud-nati
 
 A function is triggered from a storage file upload. The function then downloads the file and processes it.
 
-![injection-2](images/0x01-injection-2.png)
+```python
+import boto3, subprocess, datetime, urllib
+
+def lambda_handler(event, context):
+   media_bucket = 'upload-bucket'
+   s3 = boto3.client('s3')
+   list = s3.list_objects(Bucket=media_bucket)['Contents']
+   for s3_key in list:
+      key = urllib.unquote(s3_key['Key'].replace('+', ' ')).decode('utf-8')
+      now = datetime.datetime.now()
+      fname = now.strftime("%Y%m%d%H%M%S") + '.jpg'
+      fpath = '{year}/{month}/{day}/'.format(year=now.year, month=now.month, day=now.day)
+      subprocess.call('mkdir -p /tmp/' + fpath, shell=True)
+      if key.endswith(".jpg"):
+         s3.download_file(media_bucket, key, '/tmp/' + fpath + fname)
+      else:
+         s3.download_file(media_bucket, key, '/tmp/' + key)
+         convert_command = 'cd /tmp; convert {source} {path}{file}'.format(source=key, path=fpath, file=fname)
+         subprocess.call(convert_command, shell=True)
+```
 
 However, the the function is vulnerable to command injection, in case a downloaded file does not end with the required file extension (i.e. `.jpg`).
 
